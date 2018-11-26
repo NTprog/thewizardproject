@@ -1,5 +1,8 @@
 package com.wildcodeschool.thewizardproject.models;
 
+import org.springframework.stereotype.Component;
+
+@Component("DumbledoreId")
 public class Dumbledore implements WizardInterface{
 
 	@Override
