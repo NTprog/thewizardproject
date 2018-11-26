@@ -2,6 +2,11 @@ package com.wildcodeschool.thewizardproject.models;
 
 public class Dumbledore implements WizardInterface{
 
+	private Outfit outfit;
+	
+	public Dumbledore(Outfit outfit) {
+		this.outfit = outfit;
+	}
 	@Override
 	public String giveAdvice() {
 		// TODO Auto-generated method stub
@@ -11,6 +16,6 @@ public class Dumbledore implements WizardInterface{
 	@Override
 	public String changeDress() {
 		// TODO Auto-generated method stub
-		return "cahnge";
+		return outfit.changeDress();
 	}
 }
